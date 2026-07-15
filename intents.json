@@ -1,0 +1,48 @@
+{
+  "intents": [
+    {
+      "tag": "password_issue",
+      "patterns": [
+        "I forgot my password",
+        "How do I reset my password",
+        "Password incorrect",
+        "Cannot login",
+        "Unable to login",
+        "Forgot login password",
+        "Reset my password",
+        "Login failed",
+        "Password not working",
+        "Can't access my account"
+      ],
+      "response": "Please click on 'Forgot Password', enter your registered email, and follow the password reset instructions."
+    },
+    {
+      "tag": "leave_balance",
+      "patterns": [
+        "How can I see my leave balance",
+        "Check leave balance",
+        "Remaining leaves",
+        "Annual leave balance",
+        "Leave status",
+        "How many leaves do I have",
+        "View leave balance",
+        "Leave available"
+      ],
+      "response": "Login to the HR Portal → Dashboard → Leave → Leave Balance to view your remaining leave."
+    },
+    {
+      "tag": "it_support",
+      "patterns": [
+        "Laptop not working",
+        "VPN issue",
+        "Email problem",
+        "Printer not working",
+        "Install software",
+        "Computer slow",
+        "System crashed",
+        "Internet not working"
+      ],
+      "response": "Your issue has been categorized as IT Support. A support engineer will assist you shortly."
+    }
+  ]
+}

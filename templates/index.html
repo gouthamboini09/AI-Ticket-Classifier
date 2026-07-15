@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Support Ticket Classifier</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🤖 AI Support Ticket Classifier</h1>
+
+    <p>
+        Enter your support ticket below.
+    </p>
+
+    <textarea
+        id="ticket"
+        rows="6"
+        placeholder="Example: I forgot my password..."
+    ></textarea>
+
+    <button onclick="analyzeTicket()">
+        Analyze Ticket
+    </button>
+
+    <div id="result" class="result">
+
+        <h2>Prediction</h2>
+
+        <p><strong>Category:</strong>
+            <span id="category"></span>
+        </p>
+
+        <p><strong>Confidence:</strong>
+            <span id="confidence"></span>%
+        </p>
+
+        <p><strong>Suggested Response:</strong></p>
+
+        <div class="response" id="response"></div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
